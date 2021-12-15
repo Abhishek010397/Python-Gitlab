@@ -1,6 +1,6 @@
 import gitlab
 
-gl = gitlab.Gitlab('https://git.services.securitysvcs.verizon.com',private_token='YOUR-PRIVATE-TOKEN')
+gl = gitlab.Gitlab('https://gitlab.global.com',private_token='YOUR-PRIVATE-TOKEN')
 gl.auth()
 users = gl.users.list(all=True)
 
