@@ -1,3 +1,6 @@
+# This code checks the IAM users present in the account and list down their credentials, if the security credentials are over 88days, generates an email to 
+# notify the respective user, on 90th day the security credentials rotation takes place and the new ACCESS keys AND SECRET key are stored in the Secrets Manager
+
 import json
 import boto3
 from datetime import datetime,date
